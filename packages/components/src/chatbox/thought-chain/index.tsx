@@ -59,7 +59,7 @@ export default function ThoughtChain(props: IThoughtChainProps) {
 			title: (
 				<div className="text-base">
 					<LucideIcon name="hammer" />
-					{item.tool ? `已使用 ${item.tool}` : '暂无标题'}
+                                        {item.tool ? `已使用 ${item.tool}` : '暫無標題'}
 				</div>
 			),
 			status: 'success',
