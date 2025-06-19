@@ -21,14 +21,14 @@ export default function LoginPage() {
 		const runningMode = await getRunningModeAction();
 
 		if (!runningMode) {
-			message.error("获取运行模式失败，请检查配置");
+                        message.error("獲取運行模式失敗，請檢查配置");
 			return;
 		}
 
 		localStorage.setItem("__DC_RUNNING_MODE", runningMode);
 		localStorage.setItem("__DC_USER", JSON.stringify(userInfo));
 
-		message.success("登录成功");
+                message.success("登入成功");
 
 		// 判断运行模式，区分跳转页面
 		if (runningMode === "singleApp") {
@@ -46,7 +46,7 @@ export default function LoginPage() {
 		<div className="w-screen h-screen flex flex-col items-center justify-center bg-theme-bg">
 			<div className="absolute flex-col w-full h-full left-0 top-0 z-50 flex items-center justify-center">
 				<Logo hideGithubIcon />
-				<div className="text-theme-text">授权登录中...</div>
+                                <div className="text-theme-text">授權登入中...</div>
 				<div className="mt-6">
 					<Spin spinning />
 				</div>

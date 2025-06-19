@@ -36,7 +36,7 @@ export default function AddButton(props: IAddButtonProps) {
 					setAppEditDrawerAppItem(undefined);
 				}}
 			>
-				新增应用配置
+                                新增應用配置
 			</Button>
 
 			{drawerComponent}

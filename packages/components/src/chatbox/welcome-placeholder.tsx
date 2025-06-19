@@ -83,8 +83,8 @@ export const WelcomePlaceholder = (props: IWelcomePlaceholderProps) => {
 			<Space
 				size={12}
 				direction="vertical"
-				className={classNames({
-					'w-full md:!w-3/4': true,
+                               className={classNames({
+                                       'w-full md:max-w-[720px]': true,
 					'pb-6': !showPrompts && currentApp?.parameters.user_input_form?.length,
 					'pt-3': showPrompts,
 				})}

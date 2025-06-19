@@ -105,7 +105,7 @@ export default function WorkflowLayout() {
 						try {
 							parsedData = JSON.parse(chunk.data);
 						} catch (error) {
-							console.error("解析 JSON 失败", error);
+                                                        console.error("解析 JSON 失敗", error);
 						}
 
 						const innerData = parsedData.data;

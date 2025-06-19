@@ -194,8 +194,8 @@ export const Chatbox = (props: ChatboxProps) => {
 								// 直接通过遍历找到当前消息的用户子消息，取其内容发送消息
 								const currentItem = messageItems.find(item => item.id === messageItem.id)
 								if (!currentItem) {
-									console.error('消息不存在:', messageItem.id)
-									message.error('消息不存在')
+                                                                        console.error('消息不存在:', messageItem.id)
+                                                                        message.error('消息不存在')
 									return
 								}
 								onSubmit(currentItem.content, {
@@ -204,7 +204,7 @@ export const Chatbox = (props: ChatboxProps) => {
 							}}
 						/>
 						{messageItem.created_at && (
-							<div className="ml-3 text-sm text-desc">回复时间：{messageItem.created_at}</div>
+                                                        <div className="ml-3 text-sm text-desc">回覆時間：{messageItem.created_at}</div>
 						)}
 					</div>
 				),
@@ -263,7 +263,7 @@ export const Chatbox = (props: ChatboxProps) => {
 					uploadFileApi={(...params) => difyApi.uploadFile(...params)}
 				/>
 
-				<div className="flex-1 w-full md:!w-3/4 mx-auto px-3 md:px-0 box-border">
+                                <div className="flex-1 w-full md:max-w-[720px] mx-auto px-3 md:px-0 box-border">
 					{/* 🌟 消息列表 */}
 					<Bubble.List
 						items={items}
@@ -303,8 +303,8 @@ export const Chatbox = (props: ChatboxProps) => {
 					) : null}
 				</div>
 
-				<div
-					className="absolute bottom-0 bg-theme-main-bg w-full md:!w-3/4 left-1/2"
+                                <div
+                                        className="absolute bottom-0 bg-theme-main-bg w-full md:max-w-[720px] left-1/2"
 					style={{
 						transform: 'translateX(-50%)',
 					}}

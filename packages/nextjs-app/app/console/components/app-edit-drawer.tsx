@@ -72,7 +72,7 @@ export const AppEditDrawer = (props: IAppEditDrawerProps) => {
 			manual: true,
 			onSuccess: () => {
 				onClose?.();
-				message.success("新增应用配置成功");
+                                message.success("新增應用配置成功");
 				setTimeout(() => {
 					redirect("/console");
 				}, 1200);
@@ -88,7 +88,7 @@ export const AppEditDrawer = (props: IAppEditDrawerProps) => {
 			manual: true,
 			onSuccess: () => {
 				onClose?.();
-				message.success("编辑应用配置成功");
+                                message.success("編輯應用配置成功");
 				setTimeout(() => {
 					redirect("/console");
 				}, 1200);
@@ -99,7 +99,7 @@ export const AppEditDrawer = (props: IAppEditDrawerProps) => {
 	return (
 		<Drawer
 			width={700}
-			title={`${detailDrawerMode === AppDetailDrawerModeEnum.create ? "新增应用配置" : `编辑应用配置 - ${appItem?.info.name}`}`}
+                        title={`${detailDrawerMode === AppDetailDrawerModeEnum.create ? "新增應用配置" : `編輯應用配置 - ${appItem?.info.name}`}`}
 			open={open}
 			onClose={onClose}
 			extra={
@@ -166,8 +166,8 @@ export const AppEditDrawer = (props: IAppEditDrawerProps) => {
 								}
 								confirmCallback?.();
 							} catch (error) {
-								console.error("保存应用配置失败", error);
-								message.error(`保存应用配置失败: ${error}`);
+                                                                console.error("保存應用配置失敗", error);
+                                                                message.error(`保存應用配置失敗: ${error}`);
 							} finally {
 								setConfirmBtnLoading(false);
 							}

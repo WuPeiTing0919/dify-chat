@@ -165,8 +165,8 @@ export const useX = (options: {
 					};
 					try {
 						parsedData = JSON.parse(chunk.data);
-					} catch (error) {
-						console.error("解析 JSON 失败", error);
+                                        } catch (error) {
+                                                console.error("解析 JSON 失敗", error);
 					}
 
 					// 用于回调的 ID 更新 start
