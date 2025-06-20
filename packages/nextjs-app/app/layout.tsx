@@ -15,7 +15,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
         title: "Dify Chat Next",
-        description: "更贴近业务的 Dify Web APP",
+       description: "更貼近業務的 Dify Web APP",
         viewport: {
                 width: "device-width",
                 initialScale: 1,
