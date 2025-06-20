@@ -1,6 +1,6 @@
-# Dify Chat Web 的 Next.js 实现【WIP】
+# Dify Chat Web 的 Next.js 實現【WIP】
 
-> 注意：当前 package 仍在开发中，暂不可用，敬请期待。
+> 注意：當前 package 仍在開發中，暫不可用，敬請期待。
 
 ## Why me?
 

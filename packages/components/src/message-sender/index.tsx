@@ -293,10 +293,10 @@ export const MessageSender = (props: IMessageSenderProps) => {
 			onPasteFile={
 				enableFileUpload
 					? (firstFile, files) => {
-							if (files?.length > 1) {
-								message.warning("暂不支持一次性上传多个文件，请逐个上传");
-								return;
-							}
+                                                        if (files?.length > 1) {
+                                                                message.warning("暫不支援一次性上傳多個文件，請逐個上傳");
+                                                                return;
+                                                        }
 							// 如果附件面板是关闭状态，则打开
 							if (!open) {
 								// 强制更新 立即打开 Attachments 面板，以供获取 attachmentsRef
@@ -307,15 +307,15 @@ export const MessageSender = (props: IMessageSenderProps) => {
 					: undefined
 			}
 			onSubmit={async (content) => {
-				if (!content) {
-					message.error("内容不能为空");
-					return;
-				}
+                                if (!content) {
+                                        message.error("內容不能為空");
+                                        return;
+                                }
 				// 当文件存在时，判断是否所有文件都已上传完成
-				if (files?.length && !files.every((item) => item.status === "done")) {
-					message.error("请等待所有文件上传完成");
-					return;
-				}
+                                if (files?.length && !files.every((item) => item.status === "done")) {
+                                        message.error("請等待所有文件上傳完成");
+                                        return;
+                                }
 				await onSubmit(content, {
 					files:
 						files?.map((file) => {

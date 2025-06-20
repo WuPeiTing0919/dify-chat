@@ -89,8 +89,8 @@ export default function MessageContent(props: IMessageContentProps) {
 		return (
 			<p className="text-orange-600">
 				<WarningOutlined className="mr-2" />
-				<span>消息内容为空</span>
-				<Tooltip title="可能是用户在生成内容的过程中点击了停止响应按钮">
+                                <span>消息內容為空</span>
+                                <Tooltip title="可能是使用者在生成內容的過程中點擊了停止響應按鈕">
 					<QuestionCircleOutlined className="ml-2" />
 				</Tooltip>
 			</p>

@@ -332,7 +332,7 @@ export const Chatbox = (props: ChatboxProps) => {
 						/>
 					</div>
 					<div className="text-theme-desc text-sm text-center h-8 leading-8 truncate">
-						{currentApp?.site?.custom_disclaimer || '内容由 AI 生成, 仅供参考'}
+                                                {currentApp?.site?.custom_disclaimer || '內容由 AI 生成，僅供參考'}
 					</div>
 				</div>
 			</div>
