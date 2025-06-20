@@ -75,7 +75,7 @@ export const useX = (options: {
 
 			// 异常 => 结束
 			if (response.status !== 200) {
-				const errText = response.statusText || "请求对话接口失败";
+                        const errText = response.statusText || "請求對話接口失敗";
 				antdMessage.error(errText);
 				// 打断输出
 				abortRef.current = () => {
