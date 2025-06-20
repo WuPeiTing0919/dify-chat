@@ -2,9 +2,9 @@
 
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/lexmin0412/dify-chat) ![GitHub License](https://img.shields.io/github/license/lexmin0412/dify-chat) ![GitHub Created At](https://img.shields.io/github/created-at/lexmin0412/dify-chat) ![GitHub contributors](https://img.shields.io/github/contributors/lexmin0412/dify-chat) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/lexmin0412/dify-chat)![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/lexmin0412/dify-chat)
 
-**Dify Chat**，一个基于 Dify API 的 AI Web 应用，支持单应用、多应用等多种模式，提供开箱即用的应用配置管理功能。支持运行不同类型的 Dify 应用，适配深度思考、思维链、图表等多种形式输出。
+**Dify Chat**，一個基於 Dify API 的 AI Web 應用，支援單應用、多應用等多種模式，提供開箱即用的應用配置管理功能。支援運行不同類型的 Dify 應用，適配深度思考、思維鏈、圖表等多種形式輸出。
 
-如果你觉得这个项目还不错的话，请动动你的小手指点个 Star ⭐️ 吧～
+如果你覺得這個專案還不錯的話，請動動你的小手指點個 Star ⭐️ 吧～
 
 > ⚠️ 当前处于 v0.4.0 的早期开发阶段，发布目标为新增 Next.js 的 MVP 版本，对应现有的 react-app 和其他子包也会完成 react 升级和大规模的代码重构，在 v0.4.0 发布之前，main 分支将处于不稳定状态，部分功能可能无法使用，如需稳定使用请拉取 v0.3.0。
 
